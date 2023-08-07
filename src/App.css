@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --primary-color:        #e6e6e6;
+  --secondary-color:      rgb(226, 192, 39);
+  --white-color:          #ffffff;
+  --dark-color:           #171819;
+  --project-bg:           #f0f8ff;
+  --blue-bg:              #13156e;
+  --project-info:         #dddddf;
+  --dark-color:           #000000;
+  --gray-color:           #909090;
+  --link-color:           #404040;
+  --p-color:              #666262;
+  --red-color:            red;
+  --base-font-family:     'Plain-Bold', sans-serif;
+  --font-weight-bold:     bold;
+  --span-font-size:       32px;
+  --h1-font-size:         32px;
+  --h2-font-size:         28px;
+  --h3-font-size:         18px;
+  --p-font-size:          16px;
+  --base-font-size:       14px;
+  --menu-font-size:       12px;
+
+  --border-radius-large:  100px;
+  --border-radius-small:  5px;
+}
+
+html,
+body {
+  font-family: var( --base-font-family);
+
+}
+.color-blue {
+  color: var( --blue-bg);
+}
+.bg-grey {
+  background-color: var(--primary-color);
+}
+/* ========== Scrollbar ========== */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--primary-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var( --gray-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var( --gray-color);
+}
+/* ==============================
+.top-image {
+  min-height: 150px;
+  background-image: url("../public/images/background-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+ */
+.img-column {
+  height: 75px;
+  margin-top: 50px;
+  
+}
+.MainContent{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.profile-image {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  top: -75px;
+  border: 4px solid var(--primary-color);
+  object-fit: cover;
+  border-radius: 50%;
+}
+/* ========== Edit Button ========== */
+.edit {
+  margin: 10px;
+  padding: 5px;
+  color: var( --gray-color);
+  transition: 0.4s;
+  border: none;
+}
+.edit:hover {
+  color: --blue-bg;
+  background-color: var(--primary-color);
+  box-shadow: 0 0.125rem 0.25rem var(--dark-color) !important;
+}
+
+/* ========== Tag ========== */
+.tag {
+  padding: 2px 10px;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+.technology {
+  padding: 2px 10px;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+.dropdown-list{
+  min-height: 200px;
+  overflow-y: scroll;
+}
+.delete{
+  transition: 0.4s;
+}
+.delete:hover {
+  color: --red-color;
+  background-color: var(--primary-color);
+  box-shadow: 0 0.125rem 0.25rem var(--dark-color) !important;
+}
+
+
+
+/* ========== PDF ========== */
+
+.font-bold{
+  font-size: 40px;
+  font-weight: 900;
+}
+.font-thin {
+  font-size: 40px;
+  font-weight: 100;
+}
+.firstname{
+  position: relative;
+  top: 20px;
+}
+.title{
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.bg-1 {
+  background-color: var(--secondary-color); 
+}
+.bg-2 {
+  background-color: rgb(49, 49, 49);
+}
+.bg-3 {
+  background-color: rgb(77, 77, 77);
+}
+.pdf{
+  width: 210mm;
+  height: 297mm;
+}
+.pdf-profile-image {
+  height: 150px;
+  width: 150px;
+  border: 4px solid var(--primary-color);
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .MainContent{
+    margin-top: 25%;
+    margin-bottom: 5%;
+  }
+}
