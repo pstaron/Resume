@@ -6,13 +6,13 @@ import { NavLink } from 'react-router-dom';
 
 function Navigation() {
   return (
-    <Navbar bg="light" variant="light" className="border-bottom" sticky="top">
+    <Navbar variant="light" className="navigation-bar border-bottom" sticky="top">
       <Container>
         <Navbar.Brand>
-          <NavLink to="/" className="text-decoration-none text-black">Resume Builder</NavLink>
+          <NavLink to="/" className="text">Resume Builder</NavLink>
         </Navbar.Brand>
         <Nav className="me-auto">
-          <NavLink to="/" className="mx-2 text-decoration-none text-black">Home</NavLink>
+          <NavLink to="/" className="text mx-2">Home</NavLink>
         </Nav>
       </Container>
     </Navbar>

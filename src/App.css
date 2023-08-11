@@ -9,7 +9,7 @@
   --blue-bg:              #13156e;
   --project-info:         #dddddf;
   --dark-color:           #000000;
-  --gray-color:           #909090;
+  --gray-color:           #dfdfdf;
   --link-color:           #404040;
   --p-color:              #666262;
   --red-color:            red;
@@ -32,6 +32,24 @@ body {
   font-family: var( --base-font-family);
 
 }
+.main{
+  background-color: var(--white-color) ;
+}
+.navigation-bar{
+  background-color: var(--blue-bg);
+  
+}
+.text{
+  color: var(--white-color);
+  text-decoration: none;
+}
+.text:hover{
+  color: var(--secondary-color);
+}
+.form-data{
+  background-color: var(--gray-color);
+}
+
 .color-blue {
   color: var( --blue-bg);
 }
@@ -89,13 +107,13 @@ body {
 .edit {
   margin: 10px;
   padding: 5px;
-  color: var( --gray-color);
+  color: var(--blue-bg);
   transition: 0.4s;
   border: none;
 }
 .edit:hover {
-  color: --blue-bg;
-  background-color: var(--primary-color);
+  color: var(--white-color);
+  background-color: var(--blue-bg);
   box-shadow: 0 0.125rem 0.25rem var(--dark-color) !important;
 }
 
@@ -167,7 +185,14 @@ body {
   object-fit: cover;
   border-radius: 50%;
 }
-
+.download{
+  color: var(--white-color);
+  background-color: var(--blue-bg);
+}
+.download:hover{
+  
+  background-color: var(--secondary-color);
+}
 @media only screen and (max-width: 600px) {
   .MainContent{
     margin-top: 25%;

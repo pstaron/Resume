@@ -116,8 +116,8 @@ function PdfComponent() {
   return (
     <Fragment>
       <div className="d-grid col-2 mx-auto mt-4">
-          <button className="nav-link align-middle bg-dark text-white p-2 rounded" onClick={printDocument}>Download</button>
-          <button className="nav-link align-middle bg-dark text-white p-2 rounded mt-2" onClick={createAndDownloadPdf}>Download Version 2.0</button>
+          <button className="download nav-link align-middle text-white p-2 rounded" onClick={printDocument}>Download</button>
+          <button className="download nav-link align-middle text-white p-2 rounded mt-2" onClick={createAndDownloadPdf}>Download Version 2.0</button>
       </div>
       <div className="container d-flex justify-content-center p-4">
 
