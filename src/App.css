@@ -3,6 +3,7 @@
 :root {
   --primary-color:        #e6e6e6;
   --secondary-color:      rgb(226, 192, 39);
+  --pdf-profil-color:      rgb(226, 192, 39);
   --white-color:          #ffffff;
   --dark-color:           #171819;
   --project-bg:           #f0f8ff;
@@ -186,12 +187,16 @@ body {
   border-radius: 50%;
 }
 .download{
-  color: var(--white-color);
+  color: var(--white-color) !important;
   background-color: var(--blue-bg);
 }
 .download:hover{
   
   background-color: var(--secondary-color);
+}
+.profile{
+  background-color: var(--pdf-profil-color) !important;
+  border-bottom:solid 2px var(--blue-bg);
 }
 @media only screen and (max-width: 600px) {
   .MainContent{

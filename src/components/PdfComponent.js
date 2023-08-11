@@ -104,7 +104,7 @@ function PdfComponent() {
     return(
       list.map((item,id)=>{
         return(
-          <div className={id%2===0 ? "d-flex aligh-items-start align-items-center bg-2 text-white p-3" : "d-flex aligh-items-start align-items-center bg-3 text-white p-3"} key={id}>
+          <div className={id%2===0 ? "profile d-flex aligh-items-start align-items-center  p-3" : "profile d-flex aligh-items-start align-items-center  p-3"} key={id}>
             <p className="m-0"><GetIcon icon={item.icon}/></p><span className="mx-2"></span><p className="m-0">{item.link}</p>
           </div>
         )
