@@ -24,32 +24,17 @@ function Profile() {
     dispatch
   );
 
-  // const [file, setFile] = useState("./images/profile.jpg");
   function handleFile(e) {
     manageFile(URL.createObjectURL(e.target.files[0]));
-    // setFile(URL.createObjectURL(e.target.files[0]));
+
   }
-  // const [profile,setProfile] = useState({
-  //     name: "Your Name",
-  //     location: "City, Name",
-  //     github: "",
-  //     linkedin: "",
-  //     website: "",
-  //     position: "Your Position",
-  //     tagline: "Describe yourself in one line"
-  // })
 
   const handleProfile = (e) => {
     manageProfile({
       ...profile,
       [e.target.name]: e.target.value,
     });
-    // setProfile((old)=>{
-    //     return {
-    //         ...old,
-    //         [e.target.name]:e.target.value
-    //     }
-    // })
+
   };
 
   const [show, setShow] = useState(false);
@@ -89,10 +74,10 @@ function Profile() {
             <h4>{profile.name}</h4>
           </Col>
           <Col className="d-flex justify-content-start">
+          <HiOfficeBuilding size={30} className="p-1" />
+            <p className="p-1 m-0">{profile.position}</p>
             <HiLocationMarker size={30} className="p-1" />
             <p className="p-1 m-0">{profile.location}</p>
-            <HiOfficeBuilding size={30} className="p-1" />
-            <p className="p-1 m-0">{profile.position}</p>
           </Col>
           <Col>
             <p className="px-2">{profile.tagline}</p>
